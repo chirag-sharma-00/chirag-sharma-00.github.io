@@ -7,12 +7,15 @@
         <title> Chirag Sharma | About Me</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600">
         <link rel="stylesheet" href="../public/css/style.css">
     </head>
 
     <body>
+        <div id="particles-js"></div>
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" style="font-size: 24px">
@@ -33,10 +36,10 @@
                         <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a href="https://linkedin.com/in/chirag-sharma-00" target=_blank>
@@ -58,7 +61,7 @@
                 <span class="about-header">CHIRAG SHARMA</span>
             </div>
             <div class="container-fluid", style="padding-top: 20px">
-                <span id="about" style="position: absolute; top: -20px"></span>
+                <span id="about" style="position: absolute; top: 120px"></span>
                 <div class="row">
                     <div class="col-sm-5 my-auto mx-auto">
                         <div class="animate__animated animate__slideInLeft" style="border-right: 1px solid">
@@ -129,7 +132,8 @@
             </div>
         </section>
 
-        <section class="experience" id="experience">
+        <section class="experience">
+            <span id="experience" style="position: absolute; top: -50px"></span>
             <h1>EXPERIENCE</h1>
             <div class="container-fluid", style="padding-top: 20px; position: relative">
                 <div class="row" style="padding-bottom: 50px">
@@ -147,12 +151,15 @@
                                 Intern on the Bing Geocoding team in the Maps & Geospatial division.
                             </li>
                             <li>
-                                Working on a machine learning project to train and deploy a tile ranker for address identification of queries in the
+                                Worked on a machine learning project to train and deploy ranking models for accurate result retrieval for queries in the
                                 Indian market.
                             </li>
                             <li>
-                                Designing and creating experiment sets using data scrapes and investigating the effects of incorporating other
-                                classification/learning features.
+                                Executed feature engineering and analysis and incorporated deep address parser signals in the training pipeline to obtain 
+                                a ~10 point normalized DCG gain in Indian query ranking performance.
+                            </li>
+                            <li>
+                                Developed and published a JS-based HitApp for manual ground truth judgement of Indian queries from logs.
                             </li>
                         </ul>
                     </div>
@@ -272,6 +279,97 @@
             </div>
         </section>  
 
+        <section class="skills">
+            <span id="skills" style="position: absolute; top: -40px"></span>
+            <h1>SKILLS</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Proficient</h2>
+                        <ul>
+                            <li>
+                                Object-oriented programming
+                            </li>
+                            <li>
+                                Data engineering
+                            </li>
+                            <li>
+                                Algorithm design
+                            </li>
+                            <li>
+                                Classical and deep machine learning
+                            </li>
+                            <li>
+                                Git and version control
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Familiar</h2>
+                        <ul>
+                            <li>
+                                Experimental physics
+                            </li>
+                            <li>
+                                Circuit design
+                            </li>
+                            <li>
+                                Natural language processing
+                            </li>
+                            <li>
+                                Cloud computation
+                            </li>
+                            <li>
+                                App and web development
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <span id="contact" style="position: absolute; bottom: 0px"></span>           
+            <h1>CONTACT ME</h1>
+            <div class="col-md-12 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fa fa-map-marker mt-4 fa-2x"></i>
+                        <p>
+                            <a href="https://goo.gl/maps/1MiiN27n6P5xFcXj6" target=_blank style="color: black">
+                                Berkeley, CA 94704, USA
+                            </a>
+                        </p>
+                    </li>
+            
+                    <li><i class="fa fa-phone mt-4 fa-2x"></i>
+                        <p>
+                            <a href="tel:650-861-9598" target=_blank style="color:black">
+                                +1 (650) 861-9598
+                            </a>
+                        </p>
+                    </li>
+            
+                    <li><i class="fa fa-envelope mt-4 fa-2x"></i>
+                        <p>
+                            <a href="mailto:shchirag@berkeley.edu" target=_blank style="color:black">
+                                shchirag@berkeley.edu
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <div class="footer-copyright text-center py-3">
+                © 2020: Chirag Sharma
+                <br>
+                <a href="https://github.com/chirag-sharma-00/chirag-sharma-00.github.io" target=_blank>
+                    Website source code
+                </a>
+            </div>
+        </footer>
+
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
             crossorigin="anonymous"></script>
@@ -282,7 +380,9 @@
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
         <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
         <script src="../public/js/scrollReveal.js"></script>
+        <script src="../public/js/particles.js"></script>
     </body>
     
 
