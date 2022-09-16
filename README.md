@@ -1,1 +1,2 @@
-# chirag-sharma-00.github.io
+# iamchirag
+My personal website -- www.iamchirag.com
